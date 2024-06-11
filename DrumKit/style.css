@@ -1,4 +1,4 @@
-html {
+/* html {
   font-size: 10px;
   background: url('./background.jpg') bottom center;
   background-size: cover;
@@ -8,9 +8,77 @@ body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+} */
+
+div {
+  text-align: center;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #8E2DE2, #4A00E0);
+  color: white; 
+}
+
+.text-head {
+  font-family: 'Arial', sans-serif;
+  font-size: 3em; 
+  margin-top: 100px;
+  color: #fff; 
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00; /* Apply neon glow effect */
+  animation: neonGlow 1.5s infinite alternate; 
+}
+
+@keyframes neonGlow {
+  from {
+      text-shadow: 0 0 5px #00ddff, 0 0 10px #00ddff, 0 0 15px #00ddff, 0 0 20px #00ddff, 0 0 30px #00ddff, 0 0 40px #00ddff, 0 0 50px #00ddff, 0 0 75px #00ddff; /* Initial shadow */
+  }
+  to {
+      text-shadow: 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 250px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00; /* Final shadow */
+  }
+}
+
+
 .keys {
+  display: flex;
+  flex: 1;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  border: .1rem solid rgb(0, 0, 0);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  transition: all .07s ease;
+  border-radius: 5px;
+  background-color: rgba(123, 21, 248, 0.888); /* Semi-transparent white */
+  box-shadow: 0 0 25px rgba(3, 238, 255, 0.968); /* White shadow for glow effect */
+}
+
+.key kbd {
+  font-size: 30px;
+}
+
+.key .sound {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+
+
+
+
+/* .keys {
   display: flex;
   flex: 1;
   min-height: 100vh;
@@ -30,12 +98,12 @@ body,html {
   color: white;
   background: rgba(0,0,0,0.4);
   text-shadow: 0 0 .5rem black;
-}
+} */
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #ff0000;
+  box-shadow: 0 0 2rem #ff0000;
 }
 
 kbd {
