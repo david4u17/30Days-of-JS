@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.formDiv {
+    width: 400px;
+    height: 80px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.search-form {
+    text-align: center;
+
+}
+
+.search {
+    width: calc(100% - 20px);
+
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.suggestions {
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 10px auto;
+    text-align: left;
+    line-height: 25px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 90%;
+
+}
+
+.suggestions li {
+    font-size: 16px;
+    color: #666;
+}
+
+.hl {
+    color: blue;
+}
+
+.population {
+    color: red;
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 25px;
+    width: 150px;
+    padding: 0 10px;
+}
