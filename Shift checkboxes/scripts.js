@@ -2,7 +2,6 @@ const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 let lastChecked;
 
 // function to handle checkboxes
-
 function handleCheck(e) {
     
     let inBetween = false;
@@ -21,4 +20,6 @@ function handleCheck(e) {
     lastChecked = this;
 }
 
+
+// Event listener for checked box
 checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck))
